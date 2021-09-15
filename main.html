@@ -4,49 +4,79 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <title>Team Crew</title>
+    <script
+      src="https://kit.fontawesome.com/c39c836d28.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <div class="top">
-        <span>Team Crew</span>
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <i class="fas fa-dumbbell"></i>
+        <a href="main.html">Team Crew</a>
       </div>
+
+      <ul class="navbar_menu">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="main.html">Category</a></li>
+        <li><a href="my.html">My</a></li>
+        <li><a href="main.html">FAQ</a></li>
+      </ul>
+
+      <ul class="navbar_links">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+      </ul>
+    </nav>
+
+    <main class="container">
       <div class="middle">
         <iframe
+          id="first"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/7HqGCwt4F1I"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
       </div>
-      <div class="sub">
-        <div class="bottom1">
-          <iframe
-            width="280"
-            height="200"
-            src="https://www.youtube.com/embed/A2wp8Ipxn9s"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <div class="bottom2">
-          <iframe
-            width="280"
-            height="200"
-            src="https://www.youtube.com/embed/bmWmbIQpUSc"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+      <div class="title">
+        <span>ULTIMATE BEGINNERS Low Impact Workout | The Body Coach TV</span>
       </div>
-    </header>
+
+      <div class="middle">
+        <iframe
+          id="second"
+          class="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/A2wp8Ipxn9s"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="title">
+        <span>10 Minute Home Workout For Seniors | The Body Coach TV </span>
+      </div>
+
+      <div class="middle">
+        <iframe
+          id="third"
+          class="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/bmWmbIQpUSc"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="title">
+        <span>7 Minute Workout for Beginners I Low Impact </span>
+      </div>
+    </main>
     <script src="new.js"></script>
   </body>
 </html>
