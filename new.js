@@ -3,7 +3,7 @@ const SurveyButton = document.querySelector("#survey button");
 function handleSurveyBtnClick() {
   console.log("submit!");
 }
-
+// submit log test
 function doSave() {
   let times = document.getElementsByName("times");
   let checked_time_items = [];
@@ -86,3 +86,45 @@ window.addEventListener(
   },
   { once: true }
 );
+
+const LikeButton = document.querySelector("button");
+
+function handleLikeBtnClick() {
+  console.log("like");
+}
+
+LikeButton.addEventListener("click", handleLikeBtnClick);
+// button click event
+
+var slides = document.querySelector(".ctgr_upper_video"),
+  slide = document.querySelectorAll(".ctgr_upper_video li"),
+  currentIdx = 0,
+  slideCount = slide.length,
+  slideWidth = 300,
+  slideMargin = 30,
+  prevBtn = document.querySelector(".prev");
+nextBtn = document.querySelector(".next");
+
+slides.style.width =
+  (slideWidth + slideMargin) * slideCount - slideMargin + "px";
+
+function moveSlide(num) {
+  slides.style.left = num * 330 + "px";
+  currentIdx = num;
+}
+nextBtn.addEventListener("click", function () {
+  if (currentIdx < slideCount - 3) {
+    moveSlide(currentIdx + 1);
+    console.log(currentIdx);
+  } else {
+    moveSlide(0);
+  }
+});
+prevBtn.addEventListener("click", function () {
+  if (currentIdx > 0) {
+    moveSlide(currentIdx - 1);
+  } else {
+    moveSlide(slideCount - 3);
+  }
+});
+// multie slide 미완성

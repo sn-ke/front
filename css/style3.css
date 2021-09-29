@@ -4,18 +4,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.middle {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  align-items: center;
-}
-.sub {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 100px;
-}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -54,22 +42,65 @@ iframe {
   border-radius: 5px;
   border-style: solid;
 }
-.title {
-  text-align: center;
+
+span {
+  font-size: larger;
   font-weight: bold;
-  margin-top: 10px;
 }
-.title_bt {
+.ctgr_upper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  height: 300px;
+  overflow: hidden;
+}
+.ctgr_upper_video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2610px;
+  transition: left 0.5s ease-out;
+}
+.ctgr_upper_video li:not(:last-child) {
+  float: left;
+  margin-right: 30px;
+  style: none;
+}
+.ctgr_lower {
   display: flex;
-  justify-content: center;
   width: 100%;
+  margin-top: 120px;
+  justify-content: center;
 }
-button {
-  background-color: #263343;
-  border-radius: 5px;
-  margin: 2px;
-  color: white;
+.ctgr_lower_video {
+  margin-left: 40px;
 }
-button:hover {
-  color: #263343;
-  background-color: white;
+.ctgr_easy {
+  display: flex;
+  width: 100%;
+  margin-top: 120px;
+  justify-content: center;
+}
+.ctgr_easy_video {
+  margin-left: 40px;
+}
+.ctgr_hard {
+  display: flex;
+  width: 100%;
+  margin-top: 120px;
+  justify-content: center;
+}
+.ctgr_hard_video {
+  margin-left: 40px;
+}
+.controls {
+  text-align: center;
+  margin-top: 50px;
+}
+.controls span {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+li {
+  style: none;
+}
