@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(250, 246, 242);
+}
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 21px;
+}
+.main_container .nav {
+  padding-top: 55px;
+  width: 231px;
+  height: 44px;
+}
+.login_input input {
+  border: none;
+  width: 430px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+button {
+  width: 465px;
+  height: 48px;
+  font-size: 18px;
+  border: solid 1px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.nav i {
+  color: wheat;
+}
+.login_radio {
+  display: inline;
+}

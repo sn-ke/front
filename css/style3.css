@@ -48,23 +48,13 @@ span {
   font-weight: bold;
 }
 .ctgr_upper {
-  position: relative;
-  width: 960px;
-  margin: 0 auto;
-  height: 300px;
-  overflow: hidden;
+  display: flex;
+  width: 100%;
+  margin-top: 120px;
+  justify-content: center;
 }
 .ctgr_upper_video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2610px;
-  transition: left 0.5s ease-out;
-}
-.ctgr_upper_video li:not(:last-child) {
-  float: left;
-  margin-right: 30px;
-  style: none;
+  margin-left: 40px;
 }
 .ctgr_lower {
   display: flex;
@@ -100,7 +90,4 @@ span {
 .controls span {
   padding: 10px 20px;
   margin: 0 10px;
-}
-li {
-  style: none;
 }
