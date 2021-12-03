@@ -19,10 +19,29 @@
       </header>
       <form>
         <div class="login_input">
-          <input type="text" placeholder="ID" />
+          <input
+            type="text"
+            class="username_input"
+            placeholder="ID"
+            check_result="fail"
+            required
+          />
+          <button
+            type="button"
+            class="id_overlap_button"
+            onclick="id_overlap_check()"
+          >
+            중복검사
+          </button>
+          <img id="id_check_sucess" style="display: none" />
         </div>
         <div class="login_input">
-          <input type="password" placeholder="Password" />
+          <input
+            type="password"
+            minlength="10"
+            maxlength="20"
+            placeholder="Password"
+          />
         </div>
         <div class="login_input">
           <input type="text" placeholder="Nickname" />
@@ -39,11 +58,12 @@
           </div>
         </div>
         <div>
-          <button type="button" onclick="location.href='login.html'">
+          <button type="button" onclick="location.href='subscribe.html'">
             Sign Up
           </button>
         </div>
       </form>
     </div>
+    <script src="new.js"></script>
   </body>
 </html>

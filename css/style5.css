@@ -27,6 +27,11 @@ button {
   font-size: 18px;
   border: solid 1px;
 }
+.login_input button {
+  width: 50px;
+  height: 30px;
+  font-size: 10px;
+}
 .nav {
   display: flex;
   justify-content: center;

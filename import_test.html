@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#headers").load("common/header_inc.html"); // 원하는 파일 경로를 삽입하면 된다
+        $("#footers").load("common/footer.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+      });
+    </script>
+  </head>
+  <body>
+    <div id="headers"></div>
+
+    <div id="footers"></div>
+
+    <div id="wrap">
+      <p>#wrap</p>
+      <header role="header" data-include="include/header_inc.html"></header>
+      <!-- container -->
+      <div id="container">
+        <p>#container</p>
+        <!-- snb -->
+        <div class="snb"><p>.snb</p></div>
+        <!-- //snb -->
+        <!-- content -->
+        <div id="content"><p>#content</p></div>
+        <!-- //content -->
+        <!-- aside -->
+        <div class="aside"><p>.aside</p></div>
+        <!-- //aside -->
+        <div class="clear"></div>
+      </div>
+      <!-- //container -->
+      <footer role="footer" data-include="include/footer_inc.html"></footer>
+    </div>
+  </body>
+</html>

@@ -1,4 +1,3 @@
-@import url("css/nav.css");
 body {
   background-color: rgb(250, 246, 242);
   margin: 0;
@@ -52,27 +51,50 @@ a {
   text-decoration: none;
   color: white;
 }
-iframe {
-  border-radius: 5px;
-  border-style: solid;
+.main_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 21px;
 }
-.title {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.title_bt {
+.logo_wrap {
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: black;
+}
+.logo_wrap i {
+  color: wheat;
+}
+.subscribe_button_wrap {
+  padding-top: 13px;
+}
+.subscribe_button_wrap button {
+  width: 465px;
+  height: 48px;
+  font-size: 18px;
+  border: solid 1px;
+}
+.subscribe_button_wrap a {
+  display: flex;
+  color: black;
+  text-align: center;
+}
+.subscirbe_display_wrap {
+  display: flex;
+  width: 400px;
+  height: 250px;
+  border-style: solid;
+}
+img {
+  width: 350px;
+  height: 200px;
+  margin-top: 30px;
+}
+span {
+  display: flex;
   width: 100%;
-}
-button {
-  background-color: #263343;
-  border-radius: 5px;
-  margin: 2px;
-  color: white;
-}
-button:hover {
-  color: #263343;
-  background-color: white;
+  text-align: center;
 }

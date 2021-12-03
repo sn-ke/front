@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+.navbar_logo {
+  font-size: 24px;
+  color: white;
+}
+.navbar_logo i {
+  color: wheat;
+}
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar_menu li {
+  padding: 8px 12px;
+}
+.navbar_menu li:hover {
+  background-color: wheat;
+  border-radius: 5px;
+}
+.navbar_links {
+  display: flex;
+  list-style: none;
+  color: white;
+}
